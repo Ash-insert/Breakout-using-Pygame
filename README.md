@@ -8,7 +8,7 @@ The repository contains the following files and folders:
 - main.py: The main file containing the game loop and entry point of the game.
 - classes.py: This file contains all the required classes for the game, including the Player, Ball, Block, Laser, and Upgrade classes.
 - settings.py: This file contains all the fixed variables and settings for the game.
-- PNG/: A folder containing images used in the game, sourced from OpenGameArt.org.
+- PNG/: A folder containing images used in the game, sourced from [OpenGameArt](https://OpenGameArt.org.)
 
 ## Introduction
 
