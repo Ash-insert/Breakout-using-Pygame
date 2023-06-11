@@ -2,35 +2,35 @@
 
 A simple implementation of the classic Breakout game using Pygame.
 
+## Contents
+The repository contains the following files and folders:
+
+- main.py: The main file containing the game loop and entry point of the game.
+- classes.py: This file contains all the required classes for the game, including the Player, Ball, Block, Laser, and Upgrade classes.
+- settings.py: This file contains all the fixed variables and settings for the game.
+- PNG/: A folder containing images used in the game, sourced from OpenGameArt.org.
+
 ## Introduction
 
 This repository contains the source code and assets for a Breakout game. The game is built using the Pygame library, and it features a player-controlled paddle, a bouncing ball, and blocks to break. The goal of the game is to destroy all the blocks by bouncing the ball off the paddle and hitting the blocks with it.
 
-## Contents
-
-The repository contains 3 python files and a folder of images.
-1. main.py : This is the main file containing the game loop.
-2. classes.py : This file contains all the required classes.
-3. settings.py : This file contains all the fixed variables.
-4. PNG : The images are taken from [open game arts]{https://opengameart.org/content/breakout-brick-breaker-tile-set-free}.
-
 ## Features
 
-1. Player-controlled paddle: Move the paddle horizontally to bounce the ball and prevent it from falling.
-2. Bouncing ball: The ball moves around the screen, bouncing off the walls, paddle, and blocks.
-3. Blocks: Destroy the blocks by hitting them with the ball. Each block has its own health, and it takes multiple hits to destroy some blocks.
-4. Power-ups: Collect power-ups that drop from destroyed blocks to gain special abilities, such as slower paddle movement, faster ball speed, extra lives, and laser shooting.
-5. Game over condition: The game ends when the player loses all lives by allowing the ball to fall off the screen.
+- Player-controlled paddle: Move the paddle horizontally to bounce the ball and prevent it from falling.
+- Bouncing ball: The ball moves around the screen, bouncing off the walls, paddle, and blocks.
+- Blocks: Destroy the blocks by hitting them with the ball. Each block has its own health, and it takes multiple hits to destroy some blocks.
+- Power-ups: Collect power-ups that drop from destroyed blocks to gain special abilities, such as slower paddle movement, faster ball speed, extra lives, and laser shooting.
+- Game over condition: The game ends when the player loses all lives by allowing the ball to fall off the screen.
 
 ## Requirements
 
-1. Python 3.x
-2. Pygame library
+- Python 3.x
+- Pygame library
 
 ## How to Play
 
 1. Install Python 3.x on your machine if you haven't already.
-2. Install the Pygame library by running the following command: \ `pip install pygame`
+2. Install the Pygame library.
 3. Clone this repository or download the source code and assets.
 4. Open a terminal or command prompt and navigate to the directory where the source code is located.
 5. Run the main.py file to start the game.
