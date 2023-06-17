@@ -83,19 +83,7 @@ class Game:
     
     def game_over_display(self):
         """Display game over text."""
-
-        #self.screen.fill((0, 0, 0))
         self.screen.blit(self.game_over_text, self.text_rect)
-       
-        # while True:
-        #     for event in pygame.event.get():
-        #         if event.type == pygame.QUIT:
-        #             pygame.quit()
-        #             exit()
-
-        #     self.screen.fill((0, 0, 0))
-        #     self.screen.blit(self.game_over_text, self.text_rect)
-        #     pygame.display.update()
 
     def create_upgrade(self, pos, up_type):
         """Upgrade player."""
@@ -123,19 +111,8 @@ class Game:
     
     def Winner(self):
         """Display Winner text."""
-
         self.screen.blit(self.winner_text, self.winner_text_rect)
         
-        # while True:
-        #     for event in pygame.event.get():
-        #         if event.type == pygame.QUIT:
-        #             pygame.quit()
-        #             exit()
-
-        #     self.screen.fill((0, 0, 0))
-        #     self.screen.blit(self.winner_text, self.winner_text_rect)
-        #     pygame.display.update()
-
     def run(self):
         """Update all the game sprites"""
 

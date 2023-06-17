@@ -157,7 +157,7 @@ class Ball(pygame.sprite.Sprite):
 
         #sprite setup
         self.image = pygame.image.load('PNG/58-Breakout-Tiles.png').convert_alpha()
-        self.image = pygame.transform.rotozoom(self.image, 0, 0.20).convert_alpha()
+        self.image = pygame.transform.rotozoom(self.image, 0, Ball_Scale).convert_alpha()
         self.rect = self.image.get_rect(midbottom = self.player.rect.midtop)
 
         self.pos = pos
@@ -264,7 +264,6 @@ class Block(pygame.sprite.Sprite):
         super().__init__(groups)
         
         self.type = 2*num
-        print(self.type)
         self.health = (num) * 100 
 
         #sprite setup
@@ -368,7 +367,7 @@ class Upgrade(pygame.sprite.Sprite):
 
         #sprite setup
         self.image = pygame.image.load(f'PNG/{Upgrade_Type[up_type]}-Breakout-Tiles.png').convert_alpha()
-        self.image = pygame.transform.rotozoom(self.image, 0, 0.15).convert_alpha()
+        self.image = pygame.transform.rotozoom(self.image, 0, Upgrade_Scale).convert_alpha()
         self.rect = self.image.get_rect(midtop = pos)
 
         self.speed = 3
