@@ -70,21 +70,7 @@ class Game:
 
         #Upgrade sprite
         self.upgrade_sprites = pygame.sprite.Group()
-
-        #Game over setup
-        self.game_over = False
-        self.font = pygame.font.SysFont(None, 48)
-        self.game_over_text = self.font.render("Game Over", True, (255, 0, 0))
-        self.text_rect = self.game_over_text.get_rect(center=(Width // 2, Height // 2))
-        
-        #Winner Text
-        self.winner_text = self.font.render('Winner', True, (0,255,0))
-        self.winner_text_rect = self.winner_text.get_rect(center=(Width // 2, Height // 2))
     
-    def game_over_display(self):
-        """Display game over text."""
-        self.screen.blit(self.game_over_text, self.text_rect)
-
     def create_upgrade(self, pos, up_type):
         """Upgrade player."""
         Upgrade(pos, up_type, self.upgrade_sprites)
@@ -108,11 +94,7 @@ class Game:
         heart_width = self.heart_surf.get_width()
         for i in range(self.player.sprite.hearts):
             self.screen.blit(self.heart_surf, ( i * (heart_width + 2) + 5, 5 ))
-    
-    def Winner(self):
-        """Display Winner text."""
-        self.screen.blit(self.winner_text, self.winner_text_rect)
-        
+
     def run(self):
         """Update all the game sprites"""
 

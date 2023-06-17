@@ -262,8 +262,8 @@ class Block(pygame.sprite.Sprite):
 
         """
         super().__init__(groups)
-        
-        self.type = 2*num
+
+        self.num = 2*num
         self.health = (num) * 100 
 
         #sprite setup
