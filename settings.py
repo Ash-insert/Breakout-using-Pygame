@@ -8,6 +8,8 @@ Block_Offset = 3  #Horizontal block offset
 Block_Size = [Scale_Fac*384, Scale_Fac*128] 
 Ball_Radius = 0.1 * 128
 Heart_Scale = 0.15
+Drop_prob = 0
+Damage = 500
 
 Block_Type = { 2 : '01', 1 : '02', 4 : '03', 3 : '04', 6 : '05', 5 :'06', 8 : '07', 7 : '08', 10 : '09', 9 : '10' , 
               12 : '11', 11 : '12',  14 : '13', 13 : '14', 16 : '15', 15 : '16', 18 : '17', 17 : '18',  20 : '19', 19 : '20'}
