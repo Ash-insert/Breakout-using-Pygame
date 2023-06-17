@@ -168,7 +168,7 @@ if __name__ == '__main__':
         if game.player.sprite.hearts == 0:
             game.game_over_display()
         
-        elif len(game.block_grp) == 20:    
+        elif len(game.block_grp) == 0:    
             game.Winner()
 
         else:
