@@ -263,8 +263,9 @@ class Block(pygame.sprite.Sprite):
         """
         super().__init__(groups)
 
-        self.num = 2*num
+        self.type = 2*num
         self.health = (num) * 100 
+        
 
         #sprite setup
         self.image = pygame.image.load('PNG/'+ Block_Type[self.type] + '-Breakout-Tiles.png').convert_alpha()

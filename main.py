@@ -70,7 +70,25 @@ class Game:
 
         #Upgrade sprite
         self.upgrade_sprites = pygame.sprite.Group()
+
+        #Game over setup
+        self.game_over = False
+        self.font = pygame.font.SysFont(None, 48)
+        self.game_over_text = self.font.render("Game Over", True, (255, 0, 0))
+        self.text_rect = self.game_over_text.get_rect(center=(Width // 2, Height // 2))
+        
+        #Winner Text
+        self.winner_text = self.font.render('Winner', True, (0,255,0))
+        self.winner_text_rect = self.winner_text.get_rect(center=(Width // 2, Height // 2))
     
+    def game_over_display(self):
+        """Display game over text."""
+        self.screen.blit(self.game_over_text, self.text_rect)
+       
+    def Winner(self):
+        """Display Winner text."""
+        self.screen.blit(self.winner_text, self.winner_text_rect)
+      
     def create_upgrade(self, pos, up_type):
         """Upgrade player."""
         Upgrade(pos, up_type, self.upgrade_sprites)
@@ -135,7 +153,7 @@ if __name__ == '__main__':
     #Background_img
     bg_img = pygame.image.load('PNG/bg_image.png').convert_alpha()
     # game loop
-    while not game.game_over:
+    while True:
         #game.screen.fill((51, 51, 51))
         game.screen.blit(bg_img, (0,0))
         for event in pygame.event.get():
