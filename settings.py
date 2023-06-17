@@ -1,7 +1,7 @@
 import random
 
-Width = 800
-Height = 600
+Width = 1280
+Height = 1024
 Scale_Fac = (Width - 3 * 7)/(384 * 8) #for scaling blocks
 Top_Offset = 25  #top offset for blocks
 Block_Offset = 3  #Horizontal block offset
